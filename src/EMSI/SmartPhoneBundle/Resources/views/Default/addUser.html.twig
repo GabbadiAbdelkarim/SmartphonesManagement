@@ -1,0 +1,33 @@
+{% extends "base.html.twig" %}
+{% block body %}
+    {{ form_start(fuser) }}
+    <table>
+        <tr>
+            <td>{{ form_label(fuser.Login) }}</td>
+            <td>{{ form_widget(fuser.Login) }}</td>
+            <td>{{ form_errors(fuser.Login) }}</td>
+        </tr>
+        <tr>
+            <td>{{ form_label(fuser.Mtp) }}</td>
+            <td>{{ form_widget(fuser.Mtp) }}</td>
+            <td>{{ form_errors(fuser.Mtp) }}</td>
+        </tr>
+        <tr>
+            <td>{{ form_label(fuser.user) }}</td>
+            <td>{{ form_widget(fuser.user) }}</td>
+            <td>{{ form_errors(fuser.user) }}</td>
+        </tr>
+        <tr>
+            <td>{{ form_label(fuser.Role) }}</td>
+            <td>{{ form_widget(fuser.Role) }}</td>
+            <td>{{ form_errors(fuser.Role) }}</td>
+        </tr>
+        <tr>
+            <td>{{ form_label(fuser.Ajouter) }}</td>
+            <td>{{ form_widget(fuser.Ajouter) }}</td>
+            <td>{{ form_label(fuser.Annuler) }}</td>
+            <td>{{ form_widget(fuser.Annuler) }}</td>
+        </tr>
+    </table>
+    {{ form_end(fuser) }}
+{% endblock %}

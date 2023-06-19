@@ -1,0 +1,33 @@
+{% extends "base.html.twig" %}
+{% block body %}
+    {{ form_start(fcmd) }}
+    <table>
+        <tr>
+            <td>{{ form_label(fcmd.Smartphone) }}</td>
+            <td>{{ form_widget(fcmd.Smartphone) }}</td>
+            <td>{{ form_errors(fcmd.Smartphone) }}</td>
+        </tr>
+        <tr>
+            <td>{{ form_label(fcmd.Quantite) }}</td>
+            <td>{{ form_widget(fcmd.Quantite) }}</td>
+            <td>{{ form_errors(fcmd.Quantite) }}</td>
+        </tr>
+        <tr>
+            <td>{{ form_label(fcmd.Prixtotal) }}</td>
+            <td>{{ form_widget(fcmd.Prixtotal) }}</td>
+            <td>{{ form_errors(fcmd.Prixtotal) }}</td>
+        </tr>
+        <tr>
+            <td>{{ form_label(fcmd.user) }}</td>
+            <td>{{ form_widget(fcmd.user) }}</td>
+            <td>{{ form_errors(fcmd.user) }}</td>
+        </tr>
+        <tr>
+            <td>{{ form_label(fcmd.Ajouter) }}</td>
+            <td>{{ form_widget(fcmd.Ajouter) }}</td>
+            <td>{{ form_label(fcmd.Annuler) }}</td>
+            <td>{{ form_widget(fcmd.Annuler) }}</td>
+        </tr>
+    </table>
+    {{ form_end(fcmd) }}
+{% endblock %}

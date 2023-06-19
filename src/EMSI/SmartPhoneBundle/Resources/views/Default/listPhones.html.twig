@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ asset('bundles/emsismartphone/bootstrap/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('bundles/emsismartphone/bootstrap/css/bootstrap-theme.min.css') }}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="{{ asset('bundles/emsismartphone/bootstrap/js/bootstrap.min.js') }}"></script>
+    <style type="text/css">
+        .bs-example{
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="bs-example">
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <th>
+                ID
+            </th>
+            <th>
+                Marque
+            </th>
+            <th>
+                Modele
+            </th>
+            <th>
+                Couleur
+            </th>
+            <th>
+                Taille
+            </th>
+            <th>
+                Prix
+            </th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for p in phones %}
+            <tr>
+                <td>{{ p.id }}</td>
+                <td>{{ p.marque }}</td>
+                <td>{{ p.modele }}</td>
+                <td>{{ p.couleur }}</td>
+                <td>{{ p.taille }}</td>
+                <td>{{ p.prix }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

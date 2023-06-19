@@ -1,0 +1,43 @@
+emsi_smart_phone:
+    resource: "@EMSISmartPhoneBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+emsi_smart_phone_home:
+    path:      /index
+    defaults:  { _controller: EMSI:SmartPhoneBundle:index }
+
+emsi_smart_phone_addCommande:
+    path:      /addCommande
+    defaults:  { _controller: EMSI:SmartPhoneBundle:addCommande }
+
+emsi_smart_phone_addPhone:
+    path:      /addPhone
+    defaults:  { _controller: EMSI:SmartPhoneBundle:addPhone }
+
+emsi_smart_phone_addUser:
+    path:      /addUser
+    defaults:  { _controller: EMSI:SmartPhoneBundle:addUser }
+
+emsi_smart_phone_listCommande:
+    path:      /listCommande
+    defaults:  { _controller: EMSI:SmartPhoneBundle:listCommande }
+
+emsi_smart_phone_listPhones:
+    path:      /listPhones
+    defaults:  { _controller: EMSI:SmartPhoneBundle:listPhones }
+
+emsi_smart_phone_listUser:
+    path:      /listUser
+    defaults:  { _controller: EMSI:SmartPhoneBundle:listUser }
+
+emsi_smart_phone_login:
+    path:      /login
+    defaults:  { _controller: EMSI:SmartPhoneBundle:login }
+
+emsi_smart_phone_registered:
+    path:      /registered
+    defaults:  { _controller: EMSI:SmartPhoneBundle:registered }
+emsi_smart_phone_admin:
+    path:      /admin
+    defaults:  { _controller: EMSI:SmartPhoneBundle:admin }

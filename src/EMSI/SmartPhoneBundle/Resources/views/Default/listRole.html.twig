@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ asset('bundles/emsismartphone/bootstrap/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('bundles/emsismartphone/bootstrap/css/bootstrap-theme.min.css') }}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="{{ asset('bundles/emsismartphone/bootstrap/js/bootstrap.min.js') }}"></script>
+    <style type="text/css">
+        .bs-example{
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="bs-example">
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <th>
+                ID
+            </th>
+            <th>
+                Intitule
+            </th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for r in role %}
+            <tr>
+                <td>{{ r.id }}</td>
+                <td>{{ r.intitule }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

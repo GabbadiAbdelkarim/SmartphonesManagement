@@ -1,0 +1,38 @@
+{% extends "base.html.twig" %}
+{% block body %}
+    {{ form_start(f) }}
+    <table>
+        <tr>
+            <td>{{ form_label(f.Marque) }}</td>
+            <td>{{ form_widget(f.Marque) }}</td>
+            <td>{{ form_errors(f.Marque) }}</td>
+        </tr>
+        <tr>
+            <td>{{ form_label(f.Modele) }}</td>
+            <td>{{ form_widget(f.Modele) }}</td>
+            <td>{{ form_errors(f.Modele) }}</td>
+        </tr>
+        <tr>
+            <td>{{ form_label(f.Couleur) }}</td>
+            <td>{{ form_widget(f.Couleur) }}</td>
+            <td>{{ form_errors(f.Couleur) }}</td>
+        </tr>
+        <tr>
+            <td>{{ form_label(f.Taille) }}</td>
+            <td>{{ form_widget(f.Taille) }}</td>
+            <td>{{ form_errors(f.Taille) }}</td>
+        </tr>
+        <tr>
+            <td>{{ form_label(f.Prix) }}</td>
+            <td>{{ form_widget(f.Prix) }}</td>
+            <td>{{ form_errors(f.Prix) }}</td>
+        </tr>
+        <tr>
+            <td>{{ form_label(f.Ajouter) }}</td>
+            <td>{{ form_widget(f.Ajouter) }}</td>
+            <td>{{ form_label(f.Annuler) }}</td>
+            <td>{{ form_widget(f.Annuler) }}</td>
+        </tr>
+    </table>
+    {{ form_end(f) }}
+{% endblock %}
